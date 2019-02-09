@@ -45,7 +45,7 @@ $.gulp.task('style', getTask('style'));
 $.gulp.task('pug', getTask('pug'));
 $.gulp.task('clean', getTask('clean'));
 $.gulp.task('fonts', getTask('fonts'));
-$.gulp.task('watch', getTask('watcher'));
+$.gulp.task('watch', getTask('watch'));
 $.gulp.task('serve', getTask('serve'));
 
 $.gulp.task('default', $.gulp.series('clean', $.gulp.parallel('pug', 'style', 'js', 'fonts'), $.gulp.parallel('watch','serve')));
