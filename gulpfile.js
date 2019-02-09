@@ -11,6 +11,7 @@ let $ = {
     sourcemaps: require('gulp-sourcemaps'),
     autoprefixer: require('gulp-autoprefixer'),
     concat: require('gulp-concat'),
+    minifyCSS: require('gulp-minify-css')
 }, path = {
     build: {
         html: 'build/',
