@@ -1,6 +1,6 @@
 module.exports = function ($, path) {
     $.gulp.task('fonts', function () {
-        return $.gulp.src('source/fonts/**/*.*')
-            .pipe($.gulp.dest('build/assets/fonts/'))
+        return $.gulp.src(path.src.fonts)
+            .pipe($.gulp.dest(path.build.fonts))
     });
 };

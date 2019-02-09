@@ -14,24 +14,24 @@ let $ = {
 }, path = {
     build: {
         html: 'build/',
-            js: 'build/assets/js/',
-            css: 'build/assets/css/',
-            img: 'build/assets/img/',
-            fonts: 'build/assets/fonts/'
+        js: 'build/assets/js/',
+        css: 'build/assets/css/',
+        img: 'build/assets/img/',
+        fonts: 'build/assets/fonts/'
     },
     src: {
-        html: 'source/*.html',
-            js: 'source/js/main.js',
-            style: 'source/style/main.scss',
-            img: 'source/img/**/*.*',
-            fonts: 'source/fonts/**/*.*'
+        pug: 'source/pug/**/index.pug',
+        js: 'source/js/**/*.js',
+        style: 'source/style/**/*.scss',
+        img: 'source/img/**/*.*',
+        fonts: 'source/fonts/**/*.*'
     },
     watch: {
-        html: 'src/**/*.html',
-            js: 'src/js/**/*.js',
-            style: 'src/style/**/*.scss',
-            img: 'src/img/**/*.*',
-            fonts: 'src/fonts/**/*.*'
+        pug: 'source/**/*.pug',
+        js: 'source/js/**/*.js',
+        style: 'source/style/**/*.scss',
+        img: 'source/img/**/*.*',
+        fonts: 'source/fonts/**/*.*'
     },
     clean: './build'
 };

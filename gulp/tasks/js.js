@@ -1,8 +1,8 @@
 module.exports = function ($, path) {
     $.gulp.task('js', function () {
-    return $.gulp.src('source/scripts/**/*.js')
+    return $.gulp.src(path.src.js)
         .pipe($.concat('scripts.min.js'))
         .pipe($.uglify())
-        .pipe($.gulp.dest('build/assets/js'))
+        .pipe($.gulp.dest(path.build.js))
 });
 };

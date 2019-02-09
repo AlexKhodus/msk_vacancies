@@ -1,7 +1,7 @@
 module.exports = function ($, path) {
     $.gulp.task('pug', function () {
-        return $.gulp.src('source/pug/**/index.pug')
+        return $.gulp.src(path.src.pug)
             .pipe($.pug({ pretty: true }))
-            .pipe($.gulp.dest('build/'))
+            .pipe($.gulp.dest(path.build.html))
     });
 };
