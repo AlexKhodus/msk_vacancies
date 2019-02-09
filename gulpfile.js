@@ -11,7 +11,8 @@ let $ = {
     sourcemaps: require('gulp-sourcemaps'),
     autoprefixer: require('gulp-autoprefixer'),
     concat: require('gulp-concat'),
-    minifyCSS: require('gulp-minify-css')
+    minifyCSS: require('gulp-minify-css'),
+    spritesmith: require('gulp.spritesmith')
 }, path = {
     build: {
         html: 'build/',
@@ -25,7 +26,8 @@ let $ = {
         js: 'source/js/**/*.js',
         style: 'source/style/**/*.scss',
         img: 'source/img/**/*.*',
-        fonts: 'source/fonts/**/*.*'
+        fonts: 'source/fonts/**/*.*',
+        sprite: 'source/sprite/**/*.*'
     },
     watch: {
         pug: 'source/**/*.pug',
@@ -41,6 +43,7 @@ function getTask(task) {
     return require('./gulp/tasks/' + task)($, path);
 }
 
+$.gulp.task('sprite', getTask('sprite'));
 $.gulp.task('js', getTask('js'));
 $.gulp.task('style', getTask('style'));
 $.gulp.task('pug', getTask('pug'));
@@ -49,4 +52,4 @@ $.gulp.task('fonts', getTask('fonts'));
 $.gulp.task('watch', getTask('watch'));
 $.gulp.task('serve', getTask('serve'));
 
-$.gulp.task('default', $.gulp.series('clean', $.gulp.parallel('pug', 'style', 'js', 'fonts'), $.gulp.parallel('watch','serve')));
+$.gulp.task('default', $.gulp.series('clean', $.gulp.parallel('pug', 'style', 'js', 'fonts', 'sprite'), $.gulp.parallel('watch','serve')));
