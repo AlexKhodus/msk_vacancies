@@ -19,7 +19,8 @@ let $ = {
         js: 'build/assets/js/',
         css: 'build/assets/css/',
         img: 'build/assets/img/',
-        fonts: 'build/assets/fonts/'
+        fonts: 'build/assets/fonts/',
+        sprite: 'source/style/sprite/'
     },
     src: {
         pug: 'source/pug/**/index.pug',
@@ -52,4 +53,4 @@ $.gulp.task('fonts', getTask('fonts'));
 $.gulp.task('watch', getTask('watch'));
 $.gulp.task('serve', getTask('serve'));
 
-$.gulp.task('default', $.gulp.series('clean', $.gulp.parallel('pug', 'style', 'js', 'fonts', 'sprite'), $.gulp.parallel('watch','serve')));
+$.gulp.task('default', $.gulp.series('clean', $.gulp.parallel('sprite','pug', 'js', 'fonts', 'style'), $.gulp.parallel('watch','serve')));

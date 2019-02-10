@@ -1,0 +1,178 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$tools-2-64px-name: 'tools-2_64px';
+$tools-2-64px-x: 160px;
+$tools-2-64px-y: 0px;
+$tools-2-64px-offset-x: -160px;
+$tools-2-64px-offset-y: 0px;
+$tools-2-64px-width: 64px;
+$tools-2-64px-height: 64px;
+$tools-2-64px-total-width: 224px;
+$tools-2-64px-total-height: 192px;
+$tools-2-64px-image: 'sprite.png';
+$tools-2-64px: (160px, 0px, -160px, 0px, 64px, 64px, 224px, 192px, 'sprite.png', 'tools-2_64px', );
+$tools-64px-name: 'tools_64px';
+$tools-64px-x: 160px;
+$tools-64px-y: 64px;
+$tools-64px-offset-x: -160px;
+$tools-64px-offset-y: -64px;
+$tools-64px-width: 64px;
+$tools-64px-height: 64px;
+$tools-64px-total-width: 224px;
+$tools-64px-total-height: 192px;
+$tools-64px-image: 'sprite.png';
+$tools-64px: (160px, 64px, -160px, -64px, 64px, 64px, 224px, 192px, 'sprite.png', 'tools_64px', );
+$trophy-64px-name: 'trophy_64px';
+$trophy-64px-x: 74px;
+$trophy-64px-y: 64px;
+$trophy-64px-offset-x: -74px;
+$trophy-64px-offset-y: -64px;
+$trophy-64px-width: 68px;
+$trophy-64px-height: 64px;
+$trophy-64px-total-width: 224px;
+$trophy-64px-total-height: 192px;
+$trophy-64px-image: 'sprite.png';
+$trophy-64px: (74px, 64px, -74px, -64px, 68px, 64px, 224px, 192px, 'sprite.png', 'trophy_64px', );
+$tumblr-64px-name: 'tumblr_64px';
+$tumblr-64px-x: 0px;
+$tumblr-64px-y: 128px;
+$tumblr-64px-offset-x: 0px;
+$tumblr-64px-offset-y: -128px;
+$tumblr-64px-width: 64px;
+$tumblr-64px-height: 64px;
+$tumblr-64px-total-width: 224px;
+$tumblr-64px-total-height: 192px;
+$tumblr-64px-image: 'sprite.png';
+$tumblr-64px: (0px, 128px, 0px, -128px, 64px, 64px, 224px, 192px, 'sprite.png', 'tumblr_64px', );
+$twitter-64px-name: 'twitter_64px';
+$twitter-64px-x: 64px;
+$twitter-64px-y: 128px;
+$twitter-64px-offset-x: -64px;
+$twitter-64px-offset-y: -128px;
+$twitter-64px-width: 64px;
+$twitter-64px-height: 64px;
+$twitter-64px-total-width: 224px;
+$twitter-64px-total-height: 192px;
+$twitter-64px-image: 'sprite.png';
+$twitter-64px: (64px, 128px, -64px, -128px, 64px, 64px, 224px, 192px, 'sprite.png', 'twitter_64px', );
+$upload-64px-name: 'upload_64px';
+$upload-64px-x: 0px;
+$upload-64px-y: 0px;
+$upload-64px-offset-x: 0px;
+$upload-64px-offset-y: 0px;
+$upload-64px-width: 84px;
+$upload-64px-height: 64px;
+$upload-64px-total-width: 224px;
+$upload-64px-total-height: 192px;
+$upload-64px-image: 'sprite.png';
+$upload-64px: (0px, 0px, 0px, 0px, 84px, 64px, 224px, 192px, 'sprite.png', 'upload_64px', );
+$video-64px-name: 'video_64px';
+$video-64px-x: 0px;
+$video-64px-y: 64px;
+$video-64px-offset-x: 0px;
+$video-64px-offset-y: -64px;
+$video-64px-width: 74px;
+$video-64px-height: 64px;
+$video-64px-total-width: 224px;
+$video-64px-total-height: 192px;
+$video-64px-image: 'sprite.png';
+$video-64px: (0px, 64px, 0px, -64px, 74px, 64px, 224px, 192px, 'sprite.png', 'video_64px', );
+$wallet-64px-name: 'wallet_64px';
+$wallet-64px-x: 84px;
+$wallet-64px-y: 0px;
+$wallet-64px-offset-x: -84px;
+$wallet-64px-offset-y: 0px;
+$wallet-64px-width: 76px;
+$wallet-64px-height: 64px;
+$wallet-64px-total-width: 224px;
+$wallet-64px-total-height: 192px;
+$wallet-64px-image: 'sprite.png';
+$wallet-64px: (84px, 0px, -84px, 0px, 76px, 64px, 224px, 192px, 'sprite.png', 'wallet_64px', );
+$wine-64px-name: 'wine_64px';
+$wine-64px-x: 128px;
+$wine-64px-y: 128px;
+$wine-64px-offset-x: -128px;
+$wine-64px-offset-y: -128px;
+$wine-64px-width: 46px;
+$wine-64px-height: 64px;
+$wine-64px-total-width: 224px;
+$wine-64px-total-height: 192px;
+$wine-64px-image: 'sprite.png';
+$wine-64px: (128px, 128px, -128px, -128px, 46px, 64px, 224px, 192px, 'sprite.png', 'wine_64px', );
+$spritesheet-width: 224px;
+$spritesheet-height: 192px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($tools-2-64px, $tools-64px, $trophy-64px, $tumblr-64px, $twitter-64px, $upload-64px, $video-64px, $wallet-64px, $wine-64px, );
+$spritesheet: (224px, 192px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
