@@ -3,7 +3,8 @@ module.exports = function ($, path) {
         let spriteData = $.gulp.src(path.src.sprite)
             .pipe($.spritesmith({
                 imgName: 'sprite.png',
-                cssName: 'sprite.scss'
+                cssName: 'sprite.scss',
+                padding: 20
             }));
         return spriteData.img.pipe($.gulp.dest(path.build.imgSprite));
     }),function () {
