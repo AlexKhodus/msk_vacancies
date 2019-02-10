@@ -7,7 +7,6 @@ let $ = {
     uglify: require('gulp-uglify'),
     pug: require('gulp-pug'),
     sass: require('gulp-sass'),
-    newer: require('gulp-newer'),
     sourcemaps: require('gulp-sourcemaps'),
     autoprefixer: require('gulp-autoprefixer'),
     concat: require('gulp-concat'),
@@ -20,12 +19,13 @@ let $ = {
         css: 'build/assets/css/',
         img: 'build/assets/img/',
         fonts: 'build/assets/fonts/',
-        sprite: 'source/style/sprite/'
+        sprite: 'source/style/sprite/',
+        imgSprite: 'source/img/sprite'
     },
     src: {
         pug: 'source/pug/**/index.pug',
         js: 'source/js/**/*.js',
-        style: 'source/style/**/*.scss',
+        style: 'source/style/**/*.*',
         img: 'source/img/**/*.*',
         fonts: 'source/fonts/**/*.*',
         sprite: 'source/sprite/**/*.*'
@@ -52,5 +52,7 @@ $.gulp.task('clean', getTask('clean'));
 $.gulp.task('fonts', getTask('fonts'));
 $.gulp.task('watch', getTask('watch'));
 $.gulp.task('serve', getTask('serve'));
+$.gulp.task('img', getTask('img'));
 
-$.gulp.task('default', $.gulp.series('clean', $.gulp.parallel('sprite','pug', 'js', 'fonts', 'style'), $.gulp.parallel('watch','serve')));
+$.gulp.task('default', $.gulp.series('clean', $.gulp.parallel('pug', 'js', 'fonts', 'style', 'img'), $.gulp.parallel('watch','serve')));
+$.gulp.task('build', $.gulp.series('sprite', 'clean', $.gulp.parallel('pug', 'js', 'fonts', 'style', 'img'), $.gulp.parallel('watch','serve')));

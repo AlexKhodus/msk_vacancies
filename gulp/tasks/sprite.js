@@ -5,13 +5,13 @@ module.exports = function ($, path) {
                 imgName: 'sprite.png',
                 cssName: 'sprite.scss'
             }));
-        return spriteData.img.pipe($.gulp.dest(path.build.img));
+        return spriteData.img.pipe($.gulp.dest(path.build.imgSprite));
     }),function () {
         let spriteData = $.gulp.src(path.src.sprite)
             .pipe($.spritesmith({
                 imgName: 'sprite.png',
                 cssName: 'sprite.scss'
             }));
-        return spriteData.css.pipe($.gulp.dest(path.build.img));
+        return spriteData.css.pipe($.gulp.dest(path.build.sprite));
     });
 };
