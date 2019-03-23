@@ -25,7 +25,7 @@ let $ = {
     src: {
         pug: 'source/pug/**/index.pug',
         js: 'source/js/**/*.js',
-        style: 'source/style/**/*.*',
+        style: 'source/style/main.scss',
         img: 'source/img/**/*.*',
         fonts: 'source/fonts/**/*.*',
         sprite: 'source/sprite/**/*.*'
