@@ -1,5 +1,3 @@
-module.exports = function ($, path) {
-    $.gulp.task('clean', function () {
-        return $.del(path.clean);
-    });
+module.exports = ($, path) => {
+    $.gulp.task('clean', () => $.del(path.clean));
 };
