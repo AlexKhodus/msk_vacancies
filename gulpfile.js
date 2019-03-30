@@ -40,9 +40,7 @@ let $ = {
     clean: './build'
 };
 
-function getTask(task) {
-    return require('./gulp/tasks/' + task)($, path);
-}
+let getTask = (task) => require('./gulp/tasks/' + task)($, path);
 
 $.gulp.task('sprite', getTask('sprite'));
 $.gulp.task('js', getTask('js'));
