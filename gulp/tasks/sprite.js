@@ -1,5 +1,5 @@
-module.exports = function ($, path) {
-    $.gulp.task('sprite', $.gulp.parallel(function () {
+module.exports = ($, path) => {
+    $.gulp.task('sprite', $.gulp.parallel(() => {
         let spriteData = $.gulp.src(path.src.sprite)
             .pipe($.spritesmith({
                 imgName: 'sprite.png',
@@ -7,7 +7,7 @@ module.exports = function ($, path) {
                 padding: 20
             }));
         return spriteData.img.pipe($.gulp.dest(path.build.imgSprite));
-    }),function () {
+    }), () => {
         let spriteData = $.gulp.src(path.src.sprite)
             .pipe($.spritesmith({
                 imgName: 'sprite.png',

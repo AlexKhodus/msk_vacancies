@@ -1,5 +1,5 @@
-module.exports = function ($, path) {
-    $.gulp.task('serve', function () {
+module.exports = ($, path) => {
+    $.gulp.task('serve', () => {
         $.bs.init({
             server: 'build'
         });
