@@ -11,7 +11,8 @@ let $ = {
     autoprefixer: require('gulp-autoprefixer'),
     concat: require('gulp-concat'),
     minifyCSS: require('gulp-minify-css'),
-    spritesmith: require('gulp.spritesmith')
+    spritesmith: require('gulp.spritesmith'),
+    babel: require('gulp-babel')
 }, path = {
     build: {
         html: 'build/',
