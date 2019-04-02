@@ -5,8 +5,8 @@ module.exports = ($, path) => {
             .pipe($.sass().on('error', $.sass.logError))
             .pipe($.concat('style.css'))
             .pipe($.autoprefixer())
-            .pipe($.sourcemaps.write())
             .pipe($.minifyCSS())
+            .pipe($.sourcemaps.write())
             .pipe($.gulp.dest(path.build.css));
     });
 };
