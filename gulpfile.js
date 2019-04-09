@@ -12,7 +12,8 @@ let $ = {
     concat: require('gulp-concat'),
     minifyCSS: require('gulp-minify-css'),
     spritesmith: require('gulp.spritesmith'),
-    babel: require('gulp-babel')
+    babel: require('gulp-babel'),
+    eslint: require('gulp-eslint')
 }, path = {
     build: {
         html: 'build/',
@@ -52,6 +53,7 @@ $.gulp.task('fonts', getTask('fonts'));
 $.gulp.task('watch', getTask('watch'));
 $.gulp.task('serve', getTask('serve'));
 $.gulp.task('img', getTask('img'));
+$.gulp.task('eslint', getTask('eslint'));
 
 $.gulp.task('default', $.gulp.series('clean', $.gulp.parallel('pug', 'js', 'fonts', 'style', 'img'), $.gulp.parallel('watch','serve')));
-$.gulp.task('build', $.gulp.series('sprite', 'clean', $.gulp.parallel('pug', 'js', 'fonts', 'style', 'img'), $.gulp.parallel('watch','serve')));
+$.gulp.task('build', $.gulp.series('sprite', 'clean', $.gulp.parallel('pug', 'js', 'fonts', 'style', 'img'), $.gulp.parallel('watch', 'serve', 'eslint')));
