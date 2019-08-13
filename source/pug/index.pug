@@ -6,22 +6,53 @@ html
         title Webpack app
         link(rel="stylesheet" href="assets/css/style.css")
     body
-        header.header
-            include template/header
         main.main
-        div.main-banner
-            img
-        div.info
-            div.info-left
-                div.info-left__title
-            div.info-right
-                div.info__description
-                div.info-list
-                    div.info-list__title
-                    div.info-list__items
-                           div.info-list__icon
-                           div.info-list__text
-        div.vacancies
-            div.vacancies-list
-        footer.footer
+            .mainBanner
+                img.mainBannerImg(src="assets/img/main_banner.jpg")
+            .infog
+                .infoWrapper
+                    .infoLeft
+                        h1.infoTitle Вы можете стать частью команды МСК
+                    .infoRight
+                        p.infoDescription «Московская Строительная Компания» - это стабильная и развивающая компания, являющаяся одним из лидеров по объему текущего строительства в Ростовской области и Краснодарском крае. Мы ставим себе высокие цели и амбиции, покоряем новые высоты и представляем новые проекты. Наша компания предоставляет широкие возможности для личностного и профессионального роста своих сотрудников. Мы ищем активных, креативных и амбициозных сотрудников, которые хотят вместе с нами развиваться, достигать новых побед и совершенствоваться в профессиональной сфере.
+                        .infoList
+                            .infoListTitle Присылайте свое резюме, ведь работа в «МСК» - это:
+                            ul.infoListItems
+                                li.infoListItem.icon_1
+                                    .infoListItemsource
+                                        p Оформление по ТК РФ, оплачиваемый отпуск и больничный
+                                li.infoListItem.icon_2
+                                    .infoListItemsource
+                                        p Стабильная оплата труда
+                                li.infoListItem.icon_3
+                                    .infoListItemsource
+                                        p Рост в профессиональной и личной деятельности
+                                li.infoListItem.icon_4
+                                    .infoListItemsource
+                                        p Уверенность в завтрашнем дне
+                                li.infoListItem.icon_5
+                                    .infoListItemsource
+                                        p Работа в команде профессионалов
+                                li.infoListItem.icon_6
+                                    .infoListItemsource
+                                        p Молодой и дружный коллектив
+                                li.infoListItem.icon_7
+                                    .infoListItemsource
+                                        p Современный и комфортный офис в центре города
+
+            .vacancies
+                .vacanciesWrap
+                    ul.vacanciesItem(data-accordion="open")
+                        include template/vacancies_item
+                        include template/vacancies_item
+                        include template/vacancies_item
+                        include template/vacancies_item
+                        include template/vacancies_item
+                        include template/vacancies_item
+                        include template/vacancies_item
+                        include template/vacancies_item
+                        include template/vacancies_item
+                        include template/vacancies_item
+                        include template/vacancies_item
+            include template/form
         script(type="text/javascript" src="assets/js/scripts.min.js")

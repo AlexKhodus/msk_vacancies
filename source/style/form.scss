@@ -1,0 +1,113 @@
+.callback{
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 65vw;
+  &Wrap{
+    padding: 60px 70px;
+    background-color: #fff;
+  }
+  &Desc{
+    font-size: 14px;
+  }
+  &Title{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  &ResponsibilityTitle, &ConditionsTitle, &RequirementsTitle{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+  }
+  &ResponsibilityList, &RequirementsList, &ConditionsList{
+   margin: 0 20px;
+}
+  &ResponsibilityItem, &RequirementsItem, &ConditionsItem{
+    font-weight: 300;
+    font-size: 14px;
+    list-style: disc;
+    margin: 0 10px;
+  }
+  &File{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  &FileIcon{
+    position: relative;
+    width: 30px;
+    left: 6vw;
+    top: -55px;
+  }
+
+  &FormInputs{
+    width: 80%;
+    height: 150px;
+    display: flex;
+    align-content: space-between;
+  }
+}
+.formTitle {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  color: #6a6969;
+  margin-bottom: 0;
+}
+  .downloadForm{
+    position: relative;
+    right: -33vw;
+    bottom: 3vw;
+    text-transform: none;
+    font-size: 16px;
+    color: #000;
+    padding: 8px 120px;
+
+    &:before {
+      position: relative;
+      right: 10px;
+      top: 12px;
+      content: url('data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABQAAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjI3RkY3RTYwQjUwNDExRTlBOUYzQTA0QjYwMzQ5NUYyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjI3RkY3RTYxQjUwNDExRTlBOUYzQTA0QjYwMzQ5NUYyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjdGRjdFNUVCNTA0MTFFOUE5RjNBMDRCNjAzNDk1RjIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjdGRjdFNUZCNTA0MTFFOUE5RjNBMDRCNjAzNDk1RjIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAACAgICAgICAgICAwICAgMEAwICAwQFBAQEBAQFBgUFBQUFBQYGBwcIBwcGCQkKCgkJDAwMDAwMDAwMDAwMDAwMAQMDAwUEBQkGBgkNCwkLDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAbABkDAREAAhEBAxEB/8QAaAAAAwEBAQAAAAAAAAAAAAAABgcJCAQKAQEAAAAAAAAAAAAAAAAAAAAAEAABAwMDAwQBAwUAAAAAAAACAwQFAQYHERIIABMWIhQVFyEjJRjTNFWWCREBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2hxP43YJzPx7xnlzLmLoDJeTckxylwXvfFytE5CRkH7twqShmqrSu0BpSgJpjSgAFBAaUpToALPeC4Pj5lzHuUMC2wrhBjH2pOt0bosu2ZCZiHdx0eRyzKLu6JhG7hytGPWgOku4Ce5FXaqBCoCeobz4551iOQ+Mo+/WEFIWjMt3S0Ne9kSqZpvYScZiFXbFXeCdSoPcEwOoDUkyAiACqQCD26CSGLLyytZ/CHiUtix/dLB0+gFQmCtjH1b/ADJMCrVOi6NJKN9rTWtdp6lv/NNKafkGXiPk1nK6DnsWW9ZE5lfM0G7TeXTO31bg4ugrYi3zcSYUkkgdTbldVYhI0gbpkagVKte2Ke4g4sN35fnHRteV5ZoYWZcuI815Ckbqlc6Y1mlZOCtuSliaxlGsqg8RRWBoC7Xtk9TUUBM67VgSHUqBTHoI/wBiq8aYfAuJMBcubDukL8wi3dRLyCUtW8HrZNwC6iZO2T+BZKtnLdymIKJGKpahWmtBLWnQEHFC4nNo45z7H8brZZTL60szv7mcY3mm0nHy0vYcigh7CkYnKk1ct3BNUOw1N2NUiVbKJV0EqKAAvgy9LiieEOSaX5ZXiXH+Asa9Ihq3uNqbC5Llnp+Wfkkg0bUXqmi3KjwWQCY91d0fo2gFO6GBf4a/9Of8xOf7EP8AV6D1BdBODlj8f97493fI+Q+Hu/GfqD3/ANxd75AN+3b+0fA6adz5T9Lvbtnq16BVD7z7owd5t9keUecRnwP8oPaeP9vtL93xHwv9k8h2/wBp8h69de169Ogrp0H/2Q==');
+    }
+  }
+.formSendBtn{
+  display: block;
+  font-size: 20px;
+  position: relative;
+  left: 21vw;
+  background: #ff0000;
+  border: none;
+  color: white;
+  width: 20vw;
+  height: 8vh;
+}
+input[type="text"], input[type="tel"], input[type="email"], .callbacklFile {
+  border: 1px solid #d3d3d3;
+  width: 28vw;
+  height: 50px;
+  margin: 15px 30px;
+  text-align: center;
+}
+.callbackInputFile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.callbackInputFile + label {
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+  background-color: #d3d3d3;
+  display: inline-block;
+  padding: 0.8rem 5rem;
+}
+
+.formPersData{
+  text-align: center;
+  margin: 3vw auto 2vw;
+}

@@ -1,6 +1,25 @@
 .header{
-  display: block;
-}
-h1{
-  color: blue;
+  width: 100vw;
+  height: 6.5vh;
+  margin: 0;
+  padding: 0;
+  &wrapper{
+    width: 83.3vw;
+    margin: 0 8.3vw;
+  }
+  &logo{
+    width: 8.3vw;
+    margin: 0 3.9vw;
+  }
+  &Menu{
+    width: 52.1vw;
+  }
+  &selectLang{
+    width: 9.4vw;
+    padding: 0.8vw;
+  }
+  &Tel{
+    width: 10.4vw;
+    padding: 0 10.1vw;
+  }
 }

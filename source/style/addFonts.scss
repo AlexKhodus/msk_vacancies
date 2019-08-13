@@ -1,7 +1,12 @@
-@font-face {
-  font-family: 'RobotoBlack';                              /* Гарнитура шрифта */
-  src: url('../fonts/Roboto-Black.ttf');                   /* Путь к файлу со шрифтом */
+body{
+  font-family: 'MuseoSansCyrl-700';
+  font-family: 'MuseoSansCyrl-300';
 }
-.header h1{
-  font-family: 'RobotoBlack';
+@font-face {
+  font-family: 'MuseoSansCyrl-700';                              /* Гарнитура шрифта */
+  src: url('../fonts/MuseoSansCyrl_700.ttf');                   /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: 'MuseoSansCyrl-300';                              /* Гарнитура шрифта */
+  src: url('../fonts/MuseoSansCyrl_300.ttf');                   /* Путь к файлу со шрифтом */
 }

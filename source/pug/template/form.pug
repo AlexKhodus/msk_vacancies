@@ -1,0 +1,45 @@
+.callback
+    .callbackWrap
+        h1.callbackTitle Менеджер по продажам
+        p.callbackDesc Команда отдела продаж МСК активно растет и развивается. Мы ищем тех, кто сможет убедительно донести до покупателей преимущества наших замечательных проектов.
+        p.callbackDesc Приглашаем в нашу команду менеджера по продажам.
+        p.callbackResponsibilityTitle Обязанности:
+        ul.callbackResponsibilityList
+            li.callbackResponsibilityItem Подбор вариантов квартир в соответствии с потребностями клиентов
+            li.callbackResponsibilityItem Презентация преимуществ компании и объектов
+            li.callbackResponsibilityItem Проведение личных встреч с клиентами в центральном офисе и в офисах продаж на объектах
+            li.callbackResponsibilityItem Сопровождение клиентской базы данных - работа в CRM
+            li.callbackResponsibilityItem Обеспечение документооборота по сделке
+            li.callbackResponsibilityItem Первичная консультация Клиентов по условиям ипотеки и юридическим вопросам
+            li.callbackResponsibilityItem Заключение договора бронирования и ДДУ
+            li.callbackResponsibilityItem Выполнение плана продаж
+        p.callbackRequirementsTitle Обязательные требования:
+        ul.callbackRequirementsList
+            li.callbackRequirementsItem Высшее образование
+            li.callbackRequirementsItem Опыт продаж от 3 лет
+            li.callbackRequirementsItem Нацеленность на результат
+            li.callbackRequirementsItem Стремление к росту и развитию
+            li.callbackRequirementsItem Коммуникабельность и клиентоориентированность
+        p.callbackConditionsTitle  Условия:
+        ul.callbackConditionsList
+            li.callbackConditionsItem Официальное трудоустройство по ТК РФ с первого дня
+            li.callbackConditionsItem Заработная плата оклад + % от выполнения плана продаж
+            li.callbackConditionsItem График работы 2/2, с 09:00 до 19:00
+            li.callbackConditionsItem Интересная работа в дружном коллективе
+            li.callbackConditionsItem Работа в стабильной и растущей компании
+        form.callbackForm(method="POST" action="#")
+            p.formTitle Заполните форму
+            a(type="download" href="assets/img/resume.docx" class="downloadForm") Скачать форму резюме
+            .callbackFormInputs
+                .callbackFormInputsTop
+                    input(type="text" placeholder="ФИО")
+                    input(type="tel" placeholder="Номер телефона")
+                .callbackFormInputsBottom
+                    input(type="email" placeholder="E-mail")
+                    input.callbackInputFile(type="file" id="file" name="file")
+                    label.callbacklFile(for="file") Прикрепить резюме
+                    img.callbackFileIcon(src="assets/img/upload.svg")
+            .formPersData
+                input( type='checkbox' checked )
+                label Согласие на обработку персональных данных
+            input.formSendBtn( type="submit" VALUE="ОТПРАВИТЬ")
